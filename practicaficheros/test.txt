@@ -1,0 +1,5 @@
+Primera linea del fichero
+Segunda
+3era
+
+.....
