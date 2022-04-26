@@ -45,11 +45,24 @@ public class VectorStrings extends Vector{
             FileWriter w = new FileWriter(fich);
             BufferedWriter wr = new BufferedWriter(w);
             for (int i = 0; i < elementData.length; i++) {
-                
+                String linea = (String) this.elementData[i];
+                if (linea != null) {
+                    wr.write(linea);
+                    wr.newLine();
+                }
             }
             wr.close();
         } catch (Exception e) {
             //TODO: handle exception
+        }
+    }
+
+    public void insertar(String fich) {
+
+        for (int i = 0; i < elementData.length; i++) {
+            if (fich.compareTo(anotherString)) {
+                
+            }
         }
     }
 }
