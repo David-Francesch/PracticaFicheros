@@ -60,11 +60,13 @@ public class VectorStrings extends Vector{
     public void insertar(String fich) {
         try {
             for (int i = 0; i < elementData.length; i++) {
-                if (fich.compareTo((String) this.elementData[i]) <= 0) {
-                    this.addElement(fich);
+                if (fich.compareTo((String)elementAt(i)) < 0) {
+                    this.add(i, fich);
+                    break;
                     // insertElementAt(fich, i);
                 }else{
-                    insertElementAt(fich, i++);
+                    this.add(i+1, fich);
+                    break;
                 }
             }
             
