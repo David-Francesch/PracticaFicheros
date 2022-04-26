@@ -1,18 +1,55 @@
+import java.io.*;
+import java.util.Scanner;
 import java.util.Vector;
 
-public class VectorStrings {
+public class VectorStrings extends Vector{
     
     
 
     public VectorStrings(){
-        Vector test = new Vector();
     }
 
     public VectorStrings(String fich){
-
+        try {
+            FileReader fr = new FileReader(fich);
+            BufferedReader bfr = new BufferedReader(fr);
+            String tope;
+            while ((tope = bfr.readLine()) != null) {
+                this.addElement(tope);
+            }
+            bfr.close();
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
     }
 
-    public void LeerFich() {
-        
+    // public void LeerFich(String fich) {
+    //     try {
+    //         String frase;
+    //         FileReader r = new FileReader(fich);
+    //         BufferedReader br = new BufferedReader(r);
+    //         //  while ((frase = br.readLine())!=null) {
+    //         //      System.out.println(frase);
+    //         //  }
+    //         for (int i = 0; i < this.elementData.length; i++) {
+    //             frase = this.
+    //         }
+    //          br.close();
+    //     } catch (Exception e) {
+    //         //TODO: handle exception
+    //     }
+    // }
+
+    public void EscribirFich(String fich) {
+        try {
+            FileWriter w = new FileWriter(fich);
+            BufferedWriter wr = new BufferedWriter(w);
+            for (int i = 0; i < elementData.length; i++) {
+                
+            }
+            wr.close();
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
     }
 }
