@@ -23,23 +23,7 @@ public class VectorStrings extends Vector{
         }
     }
 
-    // public void LeerFich(String fich) {
-    //     try {
-    //         String frase;
-    //         FileReader r = new FileReader(fich);
-    //         BufferedReader br = new BufferedReader(r);
-    //         //  while ((frase = br.readLine())!=null) {
-    //         //      System.out.println(frase);
-    //         //  }
-    //         for (int i = 0; i < this.elementData.length; i++) {
-    //             frase = this.
-    //         }
-    //          br.close();
-    //     } catch (Exception e) {
-    //         //TODO: handle exception
-    //     }
-    // }
-
+    
     public void EscribirFich(String fich) {
         try {
             FileWriter w = new FileWriter(fich);
@@ -73,5 +57,21 @@ public class VectorStrings extends Vector{
         } catch (Exception e) {
             //TODO: handle exception
         }
+        // public void LeerFich(String fich) {
+        //     try {
+        //         String frase;
+        //         FileReader r = new FileReader(fich);
+        //         BufferedReader br = new BufferedReader(r);
+        //         //  while ((frase = br.readLine())!=null) {
+        //         //      System.out.println(frase);
+        //         //  }
+        //         for (int i = 0; i < this.elementData.length; i++) {
+        //             frase = this.
+        //         }
+        //          br.close();
+        //     } catch (Exception e) {
+        //         //TODO: handle exception
+        //     }
+        // }
     }
 }

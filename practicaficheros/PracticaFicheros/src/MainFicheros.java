@@ -7,8 +7,8 @@ public class MainFicheros {
     public static void main(String[] args) throws Exception {
         // File fichero = new File("../../test.txt");
         // String fichero = "../../test.txt";
-        String fichero = "C:/Users/Alumno/Desktop/David_Francesch/Programacion/javaFicheros/test.txt";
-        String fichero2 = "C:/Users/Alumno/Desktop/David_Francesch/Programacion/javaFicheros/COSAS/EscribirFich.txt";
+        String fichero = "C:/Users/Alumno/Desktop/David_Francesch/Programacion/javaFicheros/test.txt"; //poner la ruta bien
+        String fichero2 = "C:/Users/Alumno/Desktop/David_Francesch/Programacion/javaFicheros/COSAS/EscribirFich.txt"; //poner la ruta bien
         Scanner sc= new Scanner(System.in);
         int opcion;
         boolean run = true;
