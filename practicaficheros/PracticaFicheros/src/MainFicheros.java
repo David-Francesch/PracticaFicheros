@@ -43,6 +43,7 @@ public class MainFicheros {
                 LeerFich(fichero2);
                 break;
             default:
+            System.out.println("Selecciona una opcion correcta");
                 break;
         }
        } while (run); 
